@@ -259,18 +259,17 @@ Minimal, working template:
 - [youtube-hotkeys-userscripts](https://github.com/chirag127/youtube-hotkeys-userscripts) — hotkey scripts hub
 - [yt-multiselect-toolkit-userscript](https://github.com/chirag127/yt-multiselect-toolkit-userscript) — all-in-one panel
 - Individual scripts linked in [§7](#7-the-youtube-collection)
-<!-- okf-bundle -->
-## 🧠 Knowledge bundle (OKF)
 
-This repository ships its documentation as an
-**Open Knowledge Format** bundle in `okf/` —
-written so both a human and an AI agent can understand the script without reading the code.
+<!-- docs-single-source -->
+## 📚 Documentation
 
-| File | Contents |
-|------|----------|
-| `okf/bundle.md` | Overview of the collection |
-| `okf/index.md` | Catalogue of concepts |
-| `okf/concepts/` | Shared knowledge (architecture, metadata, testing, DOM notes) |
-| `okf/scripts/` | This script's own note (where applicable) |
+Documentation for this repository lives in the umbrella workspace, in exactly **one** place:
 
-Regenerate every repository's copy from the canonical bundle with `node okf/sync-okf.mjs`.
+| What | Where |
+|------|-------|
+| This script's note | [`docs/okf/scripts/userscript-install-guide.md`](../../../../../docs/okf/scripts/userscript-install-guide.md) |
+| All notes, catalogued | [`docs/okf/index.md`](../../../../../docs/okf/index.md) |
+| Shared knowledge | [`docs/okf/concepts/`](../../../../../docs/okf/concepts/) |
+
+It is **not** copied into this repository. Nothing in this workspace is duplicated: one
+document, one file. Verify with `node c:\ws\scripts\check-okf.mjs`.
